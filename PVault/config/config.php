@@ -61,11 +61,11 @@ define("COOKIE_SECRET_KEY", "1gp@TMPS{+$785ffMJde-52s");
  * It's really recommended to use SMTP!
  *
  */
-define("EMAIL_USE_SMTP", false);
-define("EMAIL_SMTP_HOST", "yourhost");
+define("EMAIL_USE_SMTP", true);
+define("EMAIL_SMTP_HOST", "ssl://smtp.gmail.com");
 define("EMAIL_SMTP_AUTH", true);
-define("EMAIL_SMTP_USERNAME", "yourusername");
-define("EMAIL_SMTP_PASSWORD", "yourpassword");
+define("EMAIL_SMTP_USERNAME", "pvaultteam01@gmail.com");
+define("EMAIL_SMTP_PASSWORD", "PVault01");
 define("EMAIL_SMTP_PORT", 465);
 define("EMAIL_SMTP_ENCRYPTION", "ssl");
 
@@ -73,7 +73,7 @@ define("EMAIL_SMTP_ENCRYPTION", "ssl");
  * Configuration for: password reset email data
  * Set the absolute URL to password_reset.php, necessary for email password reset links
  */
-define("EMAIL_PASSWORDRESET_URL", "http://localhost/password_reset.php");
+define("EMAIL_PASSWORDRESET_URL", "http://localhost/PVault/PVault/password_reset.php");
 define("EMAIL_PASSWORDRESET_FROM", "no-reply@pvault.com");
 define("EMAIL_PASSWORDRESET_FROM_NAME", "PVault");
 define("EMAIL_PASSWORDRESET_SUBJECT", "Password reset for PVault");
@@ -83,7 +83,7 @@ define("EMAIL_PASSWORDRESET_CONTENT", "Please click on this link to reset your p
  * Configuration for: verification email data
  * Set the absolute URL to register.php, necessary for email verification links
  */
-define("EMAIL_VERIFICATION_URL", "http://localhost/register.php");
+define("EMAIL_VERIFICATION_URL", "http://localhost/PVault/PVault/register.php");
 define("EMAIL_VERIFICATION_FROM", "no-reply@pvault.com");
 define("EMAIL_VERIFICATION_FROM_NAME", "PVault");
 define("EMAIL_VERIFICATION_SUBJECT", "Account activation for PVault");
