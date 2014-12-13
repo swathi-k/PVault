@@ -49,6 +49,9 @@ define("MESSAGE_USERNAME_INVALID", "Username does not fit the name scheme: only 
 define("MESSAGE_USERNAME_SAME_LIKE_OLD_ONE", "Sorry, that username is the same as your current one. Please choose another one.");
 
 // views
+define("WORDING_HOME", "Home");
+define("WORDING_EDIT_PROFILE", "Edit Profile");
+define("WORDING_BACK_TO_HOME", "Back to HOME Page");
 define("WORDING_BACK_TO_LOGIN", "Back to Login Page");
 define("WORDING_CHANGE_EMAIL", "Change email");
 define("WORDING_CHANGE_PASSWORD", "Change password");
@@ -57,8 +60,8 @@ define("WORDING_CURRENTLY", "currently");
 define("WORDING_EDIT_USER_DATA", "Edit user data");
 define("WORDING_EDIT_YOUR_CREDENTIALS", "You are logged in and can edit your credentials here");
 define("WORDING_FORGOT_MY_PASSWORD", "I forgot my password");
-define("WORDING_LOGIN", "Log in");
-define("WORDING_LOGOUT", "Log out");
+define("WORDING_LOGIN", "Login");
+define("WORDING_LOGOUT", "Logout");
 define("WORDING_NEW_EMAIL", "New email");
 define("WORDING_NEW_PASSWORD", "New password");
 define("WORDING_NEW_PASSWORD_REPEAT", "Repeat new password");

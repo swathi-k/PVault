@@ -10,7 +10,7 @@ $menu = '<div id="hmenu">
 
 $registernavpill = '
 	<li id="link">
-	<a href="./register.php"><?php echo WORDING_REGISTER_NEW_ACCOUNT; ?>Register</a>
+	<a href="./register.php">Register</a>
 	</li>
 	';
 
