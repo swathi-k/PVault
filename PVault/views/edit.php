@@ -1,5 +1,5 @@
 <?php include('_header.php'); ?>
-
+<?php include('navbar.php'); ?>
 <!-- clean separation of HTML and PHP -->
 <h2><?php echo $_SESSION['user_name']; ?> <?php echo WORDING_EDIT_YOUR_CREDENTIALS; ?></h2>
 
