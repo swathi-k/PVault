@@ -2,10 +2,10 @@
 
 /**
  * handles the user login/logout/session
- * @author Panique
- * @link http://www.php-login.net
- * @link https://github.com/panique/php-login-advanced/
- * @license http://opensource.org/licenses/MIT MIT License
+ * @author PVault Team 01
+ * @class CS 160
+ * @semester Fall 2014
+ * @professor Badari Eshwar
  */
 class Login
 {
