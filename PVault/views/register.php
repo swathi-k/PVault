@@ -1,5 +1,5 @@
 <?php include('_header.php'); ?>
-
+<?php include('navbar_not_logged_in.php'); ?>
 <!-- show registration form, but only if we didn't submit already -->
 <?php if (!$registration->registration_successful && !$registration->verification_successful) { ?>
 <form method="post" action="register.php" name="registerform">

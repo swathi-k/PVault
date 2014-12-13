@@ -1,3 +1,4 @@
+
 <?php
 
 // check for minimum PHP version
