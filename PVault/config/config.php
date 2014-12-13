@@ -13,10 +13,10 @@
  *          by the way, it's bad style to use "root", but for development it will work.
  * DB_PASS: the password of the above user
  */
-define("DB_HOST", "127.0.0.1");
+define("DB_HOST", "localhost");
 define("DB_NAME", "login");
 define("DB_USER", "root");
-define("DB_PASS", "mysql");
+define("DB_PASS", "");
 
 /**
  * Configuration for: Cookies
@@ -34,8 +34,8 @@ define("DB_PASS", "mysql");
  * COOKIE_SECRET_KEY: Put a random value here to make your app more secure. When changed, all cookies are reset.
  */
 define("COOKIE_RUNTIME", 1209600);
-define("COOKIE_DOMAIN", ".127.0.0.1");
-define("COOKIE_SECRET_KEY", "1gp@TMPS{+$78sfpMJFe-92s");
+define("COOKIE_DOMAIN", ".pvault");
+define("COOKIE_SECRET_KEY", "1gp@TMPS{+$785ffMJde-52s");
 
 /**
  * Configuration for: Email server credentials
@@ -73,20 +73,20 @@ define("EMAIL_SMTP_ENCRYPTION", "ssl");
  * Configuration for: password reset email data
  * Set the absolute URL to password_reset.php, necessary for email password reset links
  */
-define("EMAIL_PASSWORDRESET_URL", "http://127.0.0.1/php-login-advanced/password_reset.php");
-define("EMAIL_PASSWORDRESET_FROM", "no-reply@example.com");
-define("EMAIL_PASSWORDRESET_FROM_NAME", "My Project");
-define("EMAIL_PASSWORDRESET_SUBJECT", "Password reset for PROJECT XY");
+define("EMAIL_PASSWORDRESET_URL", "http://localhost/password_reset.php");
+define("EMAIL_PASSWORDRESET_FROM", "no-reply@pvault.com");
+define("EMAIL_PASSWORDRESET_FROM_NAME", "PVault");
+define("EMAIL_PASSWORDRESET_SUBJECT", "Password reset for PVault");
 define("EMAIL_PASSWORDRESET_CONTENT", "Please click on this link to reset your password:");
 
 /**
  * Configuration for: verification email data
  * Set the absolute URL to register.php, necessary for email verification links
  */
-define("EMAIL_VERIFICATION_URL", "http://127.0.0.1/php-login-advanced/register.php");
-define("EMAIL_VERIFICATION_FROM", "no-reply@example.com");
-define("EMAIL_VERIFICATION_FROM_NAME", "My Project");
-define("EMAIL_VERIFICATION_SUBJECT", "Account activation for PROJECT XY");
+define("EMAIL_VERIFICATION_URL", "http://localhost/register.php");
+define("EMAIL_VERIFICATION_FROM", "no-reply@pvault.com");
+define("EMAIL_VERIFICATION_FROM_NAME", "PVault");
+define("EMAIL_VERIFICATION_SUBJECT", "Account activation for PVault");
 define("EMAIL_VERIFICATION_CONTENT", "Please click on this link to activate your account:");
 
 /**
