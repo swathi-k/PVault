@@ -121,3 +121,4 @@ define("HASH_COST_FACTOR", "10");
 
 
 define("UPLOAD_PATH", "S:\Workspaces\wamp\www\uploads");
+define("UPLOAD_DIR", "..\\..\\uploads\\");

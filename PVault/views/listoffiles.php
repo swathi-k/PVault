@@ -24,7 +24,7 @@
 		print ('<tr>');
 		
 			print ('<td>');
-				print("<a href=" . "..\\..\\uploads\\" . $uid . "\\" . $row['file_name'] .">");
+				print("<a href=" . UPLOAD_DIR . $uid . "\\" . $row['file_name'] .">");
 				print ($row['file_name']);
 			print ('</td>');
 
