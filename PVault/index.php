@@ -42,6 +42,7 @@ if ($login->isUserLoggedIn() == true) {
     if(isset($_FILES ["file"] ["name"])) {
     	include("views/uploadasfile.php");
     }
+    include("views/listoffiles.php");
 
 } else {
     // the user is not logged in. you can do whatever you want here.

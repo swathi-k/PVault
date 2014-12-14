@@ -15,10 +15,10 @@ enctype="multipart/form-data">
 <input type="submit" name="submit" value="Submit">
 </form>
 
-
+<!-- 
 <div>
     <a href="index.php?logout"><?php echo WORDING_LOGOUT; ?></a>
     <a href="edit.php"><?php echo WORDING_EDIT_USER_DATA; ?></a>
 </div>
-
+ -->
 <?php include('_footer.php'); ?>
