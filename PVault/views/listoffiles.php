@@ -22,10 +22,10 @@
 	while($row = mysqli_fetch_array($result))
 	{	
 		print ('<tr>');
-		
+			$fname = $row['file_name'];
 			print ('<td>');
-				print("<a href=" . UPLOAD_DIR . $uid . "\\" . $row['file_name'] .">");
-				print ($row['file_name']);
+				print("<a href=" . UPLOAD_DIR . $uid . "\\" . $fname . ">");
+				print ($fname);
 			print ('</td>');
 
 			print ('<td>');
