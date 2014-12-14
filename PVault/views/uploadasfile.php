@@ -18,7 +18,7 @@
 			$NewFileName = $_FILES ["file"] ["name"];
 			$FileTitle = $_FILES ["file"] ["tmp_name"];
 			$FileSize = ($_FILES ["file"] ["size"] / 1024);
-			$uploaded_date = time();
+			$uploaded_date = date("Y-m-d H:i:s");
 			
 			echo "Upload: " . $_FILES ["file"] ["name"] . "<br>";
 			echo "Type: " . $_FILES ["file"] ["type"] . "<br>";
