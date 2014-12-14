@@ -4,8 +4,10 @@
 			"bmp",
 			"jpeg",
 			"gif",
-			"png" 
+			"png",
+			"pdf" 
 	);
+	
 	$upload_exts = end ( explode ( ".", $_FILES ["file"] ["name"] ) );
 	if ((($_FILES ["file"] ["type"] == "image/gif") || ($_FILES ["file"] ["type"] == "image/jpeg") || ($_FILES ["file"] ["type"] == "image/png") || ($_FILES ["file"] ["type"] == "image/pjpeg")) && ($_FILES ["file"] ["size"] < 2000000) && in_array ( $upload_exts, $file_exts )) 
 	{
@@ -46,4 +48,5 @@
 	} else {
 		echo "<div class='error'>Invalid file</div>";
 	}
+	
 	?>

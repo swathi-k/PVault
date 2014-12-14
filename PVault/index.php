@@ -39,7 +39,9 @@ if ($login->isUserLoggedIn() == true) {
     // for demonstration purposes, we simply show the "you are logged in" view.
     include("views/navbar.php");
     include("views/logged_in.php");
-    include("views/uploadasfile.php");
+    if(isset($_FILES ["file"] ["name"])) {
+    	include("views/uploadasfile.php");
+    }
 
 } else {
     // the user is not logged in. you can do whatever you want here.
