@@ -7,21 +7,17 @@
 	
 	print ('<table style="width:100%">');
 		
-		print ('<tr>');
-	
-			print ('<td>');
-				print ('File Name');
-			print ('</td>');
-	
-			print ('<td>');
-				print ('Size');
-			print ('</td>');
-	
-			print ('<td>');
-				print ('Uploaded Date');
-			print ('</td>');
-	
-		print ('</tr>');
+		print ('<tr>
+					<td>
+						File Name
+					</td>
+					<td>
+						Size
+					</td>
+					<td>
+						Uploaded Date
+					</td>
+				</tr>');
 	
 	while($row = mysqli_fetch_array($result))
 	{	
