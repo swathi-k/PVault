@@ -291,6 +291,7 @@ class Login
                 $_SESSION['user_name'] = $result_row->user_name;
                 $_SESSION['user_email'] = $result_row->user_email;
                 $_SESSION['user_logged_in'] = 1;
+                $_SESSION['user_time'] = date("d-m-Y H:i:s");
 
                 // declare user id, set the login status to true
                 $this->user_id = $result_row->user_id;

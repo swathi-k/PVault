@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="300;url=index.php?logout">
     <title>PVault</title>
     <style type="text/css">
         /* just for the demo */

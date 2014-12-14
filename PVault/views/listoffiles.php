@@ -33,7 +33,7 @@
 
 			print ('<td>');
 				print ($row['file_size']);
-			print ('</td>');
+			print (' kb</td>');
 				
 			print ('<td>');
 				print ($row['uploaded_date']);

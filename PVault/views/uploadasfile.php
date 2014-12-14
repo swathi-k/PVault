@@ -46,7 +46,7 @@
 			}
 		}
 	} else {
-		echo "<div class='error'>Invalid file, Please try again</div>";
+		echo "<div class='error'>Invalid file type or size: Please try again!</div>";
 	}
 	
 	?>
