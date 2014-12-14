@@ -23,9 +23,12 @@
 	{	
 		print ('<tr>');
 			$fname = $row['file_name'];
+			$fname = strval($fname);
+			
 			print ('<td>');
-				print("<a href=" . UPLOAD_DIR . $uid . "\\" . $fname . ">");
-				print ($fname);
+				print('<a href="' . UPLOAD_DIR . $uid . '\\' . $fname . '">');
+					print ($fname);
+				print("</a>");
 			print ('</td>');
 
 			print ('<td>');
