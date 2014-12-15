@@ -29,9 +29,9 @@
     </style>
     
     <script src="scripts/popup.js"></script>
-    
+    <script src="scripts/confirmationpopup.js"></script>
 </head>
-<body>
+<body id="content">
 
 <?php
 // show potential errors / feedback (from login object)
