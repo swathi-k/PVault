@@ -3,7 +3,7 @@ function myFunction() {
     
     if(password != "hello")
     {
-    	document.getElementById("content").innerHTML =
-    	    "Invalid Password";
+    	window.location="index.php";
     }
+    window.location="index.php";
 }
