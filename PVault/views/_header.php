@@ -27,6 +27,9 @@
             margin-bottom: 15px;
         }
     </style>
+    
+    <script src="scripts/popup.js"></script>
+    
 </head>
 <body>
 

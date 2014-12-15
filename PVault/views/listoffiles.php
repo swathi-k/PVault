@@ -26,7 +26,7 @@
 			$fname = strval($fname);
 			
 			print ('<td>');
-				print('<a href="' . UPLOAD_DIR . $uid . '\\' . $fname . '">');
+				print('<a href="' . UPLOAD_DIR . $uid . '\\' . $fname . ' "class="popup">');
 					print ($fname);
 				print("</a>");
 			print ('</td>');

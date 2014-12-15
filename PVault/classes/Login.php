@@ -372,7 +372,9 @@ class Login
         if ($this->databaseConnection()) {
             // Reset rememberme token
             $sth = $this->db_connection->prepare("UPDATE users SET user_rememberme_token = NULL WHERE user_id = :user_id");
-            $sth->execute(array(':user_id' => $_SESSION['user_id']));
+            if(isset($_SESSION['user_id'])) {
+            	$sth->execute(array(':user_id' => $_SESSION['user_id']));
+            }
         }
 
         // set the rememberme-cookie to ten years ago (3600sec * 365 days * 10).
