@@ -39,14 +39,6 @@
 				
 				if($_FILES ["file"] ["type"] == "application/pdf")
 				{
-					// 	include("views/encryptpdf.php");
-					// 	Password for the PDF file (I suggest using the email adress of the purchaser).
-					// 	$password = "testpassword";
-					// 	Name of the original file (unprotected).
-					// 	$origFile = $_FILES ["file"] ["tmp_name"];
-					// 	Name of the destination file (password protected and printing rights removed).
-					// 	$destFile ="sample_protected.pdf";
-					// 	pdfEncrypt($origFile, $password, $destFile );
 					
 					move_uploaded_file ( $_FILES ["file"] ["tmp_name"], $up_path . $_FILES ["file"] ["name"] );
 					echo "<div class='sucess'>" . "Stored in: " . $up_path . $_FILES ["file"] ["name"] . "</div>";
