@@ -8,7 +8,8 @@
 			"pdf" 
 	);
 	
-	$upload_exts = end ( explode ( ".", $_FILES ["file"] ["name"] ) );
+	$tmp = explode ( ".", $_FILES ["file"] ["name"] );
+	$upload_exts = end ( $tmp );
 	if ((($_FILES ["file"] ["type"] == "image/gif") || ($_FILES ["file"] ["type"] == "image/jpeg") || ($_FILES ["file"] ["type"] == "image/png") || ($_FILES ["file"] ["type"] == "image/pjpeg") || ($_FILES ["file"] ["type"] == "application/pdf")) && ($_FILES ["file"] ["size"] < 2000000) && in_array ( $upload_exts, $file_exts )) 
 	{
 		if ($_FILES ["file"] ["error"] > 0) {
