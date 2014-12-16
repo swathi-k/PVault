@@ -5,6 +5,11 @@
 	$db = new mysqli ( DB_HOST, DB_USER, DB_PASS, DB_NAME );
 	$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid );
 	
+	if(isset($_POST['searchkeyword'])) {
+		$searchkey = $_POST['searchkeyword'];
+		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid . " AND file_name LIKE '%" . $searchkey . "%'");
+	}
+	
 	print ('<table style="width:100%">');
 		
 		print ('<tr>

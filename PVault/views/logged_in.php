@@ -9,6 +9,12 @@
 	<input type="file" name="file" id="file">
 	<input type="submit" name="submit" value="Submit">
 </form>
+
+<form id="searchform" method=post action="index.php">
+	<input type="text" placeholder="Search..." required name="searchkeyword">
+	<input type="submit" name="submit" value="Enter">
+</form>
+
 </p>
 </div>
 
