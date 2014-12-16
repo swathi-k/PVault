@@ -30,22 +30,15 @@
 			// Enter your path to upload file here
 			if (file_exists ( $up_path . $_FILES ["file"] ["name"] )) {
 				echo "<div class='error'>" . $_FILES ["file"] ["name"] . WORDING_FILE_UPLOAD_ERROR_EXISTS . "</div>";
+				print '<script>alert("'. $_FILES ["file"] ["name"] . WORDING_FILE_UPLOAD_ERROR_EXISTS .'");</script>';
 			} else {
-				echo "Upload: " . $_FILES ["file"] ["name"] . "<br>";
-				echo "Type: " . $_FILES ["file"] ["type"] . "<br>";
-				echo "Size: " . ($_FILES ["file"] ["size"] / 1024) . " kB<br>";
-				echo "Temp file: " . $_FILES ["file"] ["tmp_name"] . "<br>";
-					
-				if($_FILES ["file"] ["type"] == "application/pdf")
-				{
-					
-					move_uploaded_file ( $_FILES ["file"] ["tmp_name"], $up_path . $_FILES ["file"] ["name"] );
-					echo "<div class='sucess'>" . "Stored in: " . $up_path . $_FILES ["file"] ["name"] . "</div>";
-				}
-				else {
-					move_uploaded_file ( $_FILES ["file"] ["tmp_name"], $up_path . $_FILES ["file"] ["name"] );
-					echo "<div class='sucess'>" . "Stored in: " . $up_path . $_FILES ["file"] ["name"] . "</div>";
-				}
+				$alertstring =  "Upload: " . $_FILES ["file"] ["name"] . "<br>
+						Type: " . $_FILES ["file"] ["type"] . "<br>
+						Size: " . ($_FILES ["file"] ["size"] / 1024) . " kB<br>
+						Temp file: " . $_FILES ["file"] ["tmp_name"] . "<br>";
+				print '<script>alert("'. $alertstring .'");</script>';
+				
+				move_uploaded_file ( $_FILES ["file"] ["tmp_name"], $up_path . $_FILES ["file"] ["name"] );
 				
 				//Enter query in SQL
 				$uid = $_SESSION ['user_id'];
@@ -56,6 +49,7 @@
 		}
 	} else {
 		echo "<div class='error'>" . WORDING_FILE_UPLOAD_ERROR . "</div>";
+		print '<script>alert("'. WORDING_FILE_UPLOAD_ERROR .'");</script>';
 	}
 	
 	?>
