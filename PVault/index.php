@@ -44,6 +44,9 @@ if ($login->isUserLoggedIn() == true) {
     if(isset($_FILES ["file"] ["name"])) {
     	include("views/uploadasfile.php");
     }
+    if(isset($_POST['deletefile'])) {
+    	include("views/deletefile.php");
+    }
     include("views/listoffiles.php");
 
 } else {

@@ -3,7 +3,7 @@
 	// Enter query in SQL
 	$uid = $_SESSION ['user_id'];
 	$db = new mysqli ( DB_HOST, DB_USER, DB_PASS, DB_NAME );
-	$result = $db->query ( "SELECT file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid );
+	$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid );
 	
 	print ('<table style="width:100%">');
 		
@@ -38,7 +38,13 @@
 			print ('<td>');
 				print ($row['uploaded_date']);
 			print ('</td>');
-				
+			
+			print ('<td>');
+				print "<form action=\"index.php\" method=\"post\">";
+					print "<input type=\"image\" src=\"http://megaicons.net/static/img/icons_sizes/16/624/24/trash-can-icon.png\" name=\"deletefile\" value=\"{$row['id']}\"/>";
+				print "</form>";
+			print ('</td>');
+			
 		print ('</tr>');
 	}				
 	
