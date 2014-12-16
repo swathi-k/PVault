@@ -83,6 +83,7 @@ define("WORDING_SUBMIT_NEW_PASSWORD", "Submit new password");
 define("WORDING_USERNAME", "Username");
 define("WORDING_YOU_ARE_LOGGED_IN_AS", "Hello! You are logged in as ");
 define("WORDING_FILE_UPLOAD_ERROR", "Invalid file type or size (less than 200kb): Please try again!");
+define("WORDING_FILE_UPLOAD_ERROR_EXISTS", " already exists! Please try again!");
 define("TABLE_HEADER_FILE_NAME", "File Name");
 define("TABLE_HEADER_FILE_SIZE", "Size");
 define("TABLE_HEADER_FILE_UPLOAD_DATE", "Uploaded Date");

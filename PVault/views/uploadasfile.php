@@ -21,11 +21,6 @@
 			$FileSize = ($_FILES ["file"] ["size"] / 1024);
 			$uploaded_date = date("Y-m-d H:i:s");
 			
-			echo "Upload: " . $_FILES ["file"] ["name"] . "<br>";
-			echo "Type: " . $_FILES ["file"] ["type"] . "<br>";
-			echo "Size: " . ($_FILES ["file"] ["size"] / 1024) . " kB<br>";
-			echo "Temp file: " . $_FILES ["file"] ["tmp_name"] . "<br>";
-			
 			$up_path = UPLOAD_PATH . "\\" . $_SESSION ['user_id'] . "\\";
 			
 			if (! file_exists ( $up_path )) {
@@ -34,9 +29,13 @@
 			
 			// Enter your path to upload file here
 			if (file_exists ( $up_path . $_FILES ["file"] ["name"] )) {
-				echo "<div class='error'>" . "(" . $_FILES ["file"] ["name"] . ")" . " already exists. " . "</div>";
+				echo "<div class='error'>" . $_FILES ["file"] ["name"] . WORDING_FILE_UPLOAD_ERROR_EXISTS . "</div>";
 			} else {
-				
+				echo "Upload: " . $_FILES ["file"] ["name"] . "<br>";
+				echo "Type: " . $_FILES ["file"] ["type"] . "<br>";
+				echo "Size: " . ($_FILES ["file"] ["size"] / 1024) . " kB<br>";
+				echo "Temp file: " . $_FILES ["file"] ["tmp_name"] . "<br>";
+					
 				if($_FILES ["file"] ["type"] == "application/pdf")
 				{
 					
