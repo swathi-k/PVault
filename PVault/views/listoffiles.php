@@ -31,16 +31,16 @@
 		
 		print ('<tr>
 					<th>
-						<a href="index.php?orderBy=file_name">File Name</a>
+						<a href="index.php?orderBy=file_name">' . TABLE_HEADER_FILE_NAME . '</a>
 					</th>
 					<th>
-						<a href="index.php?orderBy=file_size">Size</a>
+						<a href="index.php?orderBy=file_size">' . TABLE_HEADER_FILE_SIZE . '</a>
 					</th>
 					<th>
-						<a href="index.php?orderBy=uploaded_date">Uploaded Date</a>
+						<a href="index.php?orderBy=uploaded_date">' . TABLE_HEADER_FILE_UPLOAD_DATE . '</a>
 					</th>
 					<th>
-						<a href="index.php?orderBy=file_type">File Type</a>
+						<a href="index.php?orderBy=file_type">' . TABLE_HEADER_FILE_TYPE . '</a>
 					</th>
 				</tr>');
 	

@@ -56,7 +56,7 @@
 			}
 		}
 	} else {
-		echo "<div class='error'>Invalid file type or size: Please try again!</div>";
+		echo "<div class='error'>" . WORDING_FILE_UPLOAD_ERROR . "</div>";
 	}
 	
 	?>

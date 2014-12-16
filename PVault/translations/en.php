@@ -81,4 +81,10 @@ define("WORDING_REQUEST_PASSWORD_RESET", "Request a password reset. Enter your u
 define("WORDING_RESET_PASSWORD", "Reset my password");
 define("WORDING_SUBMIT_NEW_PASSWORD", "Submit new password");
 define("WORDING_USERNAME", "Username");
-define("WORDING_YOU_ARE_LOGGED_IN_AS", "You are logged in as ");
+define("WORDING_YOU_ARE_LOGGED_IN_AS", "Hello! You are logged in as ");
+define("WORDING_FILE_UPLOAD_ERROR", "Invalid file type or size (less than 200kb): Please try again!");
+define("TABLE_HEADER_FILE_NAME", "File Name");
+define("TABLE_HEADER_FILE_SIZE", "Size");
+define("TABLE_HEADER_FILE_UPLOAD_DATE", "Uploaded Date");
+define("TABLE_HEADER_FILE_TYPE", "File Type");
+define("WORDING_READY_UPLOAD", "Ready to Upload?");
