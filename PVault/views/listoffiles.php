@@ -3,11 +3,11 @@
 	// Enter query in SQL
 	$uid = $_SESSION ['user_id'];
 	$db = new mysqli ( DB_HOST, DB_USER, DB_PASS, DB_NAME );
-	$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid );
+	$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date, file_type FROM file_records WHERE userid =" . $uid );
 	
 	if(isset($_POST['searchkeyword'])) {
 		$searchkey = $_POST['searchkeyword'];
-		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid . " AND file_name LIKE '%" . $searchkey . "%'");
+		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date, file_type FROM file_records WHERE userid =" . $uid . " AND file_name LIKE '%" . $searchkey . "%'");
 	}
 	
 	if(isset($_GET['orderBy'])) {
@@ -24,7 +24,7 @@
 			$direction = 'DESC';
 		}
 		
-		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid . " ORDER BY " . $order . " " . $direction );
+		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date, file_type FROM file_records WHERE userid =" . $uid . " ORDER BY " . $order . " " . $direction );
 	}
 	
 	print ('<table style="width:100%">');
@@ -38,6 +38,9 @@
 					</th>
 					<th>
 						<a href="index.php?orderBy=uploaded_date">Uploaded Date</a>
+					</th>
+					<th>
+						<a href="index.php?orderBy=file_type">File Type</a>
 					</th>
 				</tr>');
 	
@@ -59,6 +62,10 @@
 				
 			print ('<td>');
 				print ($row['uploaded_date']);
+			print ('</td>');
+			
+			print ('<td>');
+				print ($row['file_type']);
 			print ('</td>');
 			
 			print ('<td>');
