@@ -10,18 +10,35 @@
 		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid . " AND file_name LIKE '%" . $searchkey . "%'");
 	}
 	
+	if(isset($_GET['orderBy'])) {
+		$order = $_GET['orderBy'];
+		$direction = 'ASC';
+		if(isset($_SESSION[$order])) {
+			$_SESSION[$order] = !$_SESSION[$order];
+		}
+		else {
+			$_SESSION[$order] = true;
+		}
+		
+		if(!$_SESSION[$order]) {
+			$direction = 'DESC';
+		}
+		
+		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date FROM file_records WHERE userid =" . $uid . " ORDER BY " . $order . " " . $direction );
+	}
+	
 	print ('<table style="width:100%">');
 		
 		print ('<tr>
-					<td>
-						File Name
-					</td>
-					<td>
-						Size
-					</td>
-					<td>
-						Uploaded Date
-					</td>
+					<th>
+						<a href="index.php?orderBy=file_name">File Name</a>
+					</th>
+					<th>
+						<a href="index.php?orderBy=file_size">Size</a>
+					</th>
+					<th>
+						<a href="index.php?orderBy=uploaded_date">Uploaded Date</a>
+					</th>
 				</tr>');
 	
 	while($row = mysqli_fetch_array($result))
