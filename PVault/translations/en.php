@@ -89,3 +89,4 @@ define("TABLE_HEADER_FILE_SIZE", "Size");
 define("TABLE_HEADER_FILE_UPLOAD_DATE", "Uploaded Date");
 define("TABLE_HEADER_FILE_TYPE", "File Type");
 define("WORDING_READY_UPLOAD", "Ready to Upload?");
+define("WORDING_UPLOAD_SUCCESS", "Success! Uploaded ");
