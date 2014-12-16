@@ -271,7 +271,7 @@ class Login
                 // was MESSAGE_USER_DOES_NOT_EXIST before, but has changed to MESSAGE_LOGIN_FAILED
                 // to prevent potential attackers showing if the user exists
                 $this->errors[] = MESSAGE_LOGIN_FAILED;
-            } else if (($result_row->user_failed_logins >= 3) && ($result_row->user_last_failed_login > (time() - 30))) {
+            } else if (($result_row->user_failed_logins >= 3) && ($result_row->user_last_failed_login > (time() - 86400))) {
                 $this->errors[] = MESSAGE_PASSWORD_WRONG_3_TIMES;
             // using PHP 5.5's password_verify() function to check if the provided passwords fits to the hash of that user's password
             } else if (! password_verify($user_password, $result_row->user_password_hash)) {
