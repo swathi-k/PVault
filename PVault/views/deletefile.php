@@ -11,14 +11,11 @@
 		
 		while($row = mysqli_fetch_array($result))
 		{
-			echo unlink(UPLOAD_DIR . $_SESSION ['user_id'] . '\\' . $row['file_name']);
+			unlink(UPLOAD_DIR . $_SESSION ['user_id'] . '\\' . $row['file_name']);
 		}
 		
 		$db->query("DELETE FROM file_records WHERE id = $fileid");
 		
-		
  	}
- 	
- 	
 	
 ?>
