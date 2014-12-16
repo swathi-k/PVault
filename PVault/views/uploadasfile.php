@@ -32,10 +32,7 @@
 				echo "<div class='error'>" . $_FILES ["file"] ["name"] . WORDING_FILE_UPLOAD_ERROR_EXISTS . "</div>";
 				print '<script>alert("'. $_FILES ["file"] ["name"] . WORDING_FILE_UPLOAD_ERROR_EXISTS .'");</script>';
 			} else {
-				$alertstring =  "Upload: " . $_FILES ["file"] ["name"] . "<br>
-						Type: " . $_FILES ["file"] ["type"] . "<br>
-						Size: " . ($_FILES ["file"] ["size"] / 1024) . " kB<br>
-						Temp file: " . $_FILES ["file"] ["tmp_name"] . "<br>";
+				$alertstring =  'Uploaded ' . $_FILES ["file"] ["name"];
 				print '<script>alert("'. $alertstring .'");</script>';
 				
 				move_uploaded_file ( $_FILES ["file"] ["tmp_name"], $up_path . $_FILES ["file"] ["name"] );
