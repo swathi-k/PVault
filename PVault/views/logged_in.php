@@ -4,9 +4,10 @@ print '<div id="logged_in">
 	<center>
 		<h2>' . WORDING_YOU_ARE_LOGGED_IN_AS . $_SESSION['user_name'] . '</h2><br />
 
-	</center>
+	</center><div id="ready">
+				
 	' .
-		WORDING_READY_UPLOAD . '</br>
+		WORDING_READY_UPLOAD . '</div></br>
 	
 	<center><table style="width:90%">		
 	<td>
