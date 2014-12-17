@@ -5,22 +5,28 @@ print '<div id="logged_in">
 		<h2>' . WORDING_YOU_ARE_LOGGED_IN_AS . $_SESSION['user_name'] . '</h2><br />
 
 	</center>
-	<p>' .
+	' .
 		WORDING_READY_UPLOAD . '</br>
 	
+	<table>		
+	<td>
+					
 	<form action="index.php" method="post" enctype="multipart/form-data">
 		<label for="file">Filename:</label>
 		<input type="file" name="file" id="file">
 		<input type="submit" name="submit" value="Submit">
 	</form>
-
+	</td>
+				<td>
+			
 	<form id="searchform" method=post action="index.php">
 		<input type="text" placeholder="Search..." required
 			name="searchkeyword">
 		<input type="submit" name="submit" value="Enter">
 	</form>
-
-	</p>
+	</td>
+	</table>
+	
 </div>';
 ?>
 <?php include('_footer.php'); ?>

@@ -8,6 +8,7 @@
             margin: 0;
             padding: 0;
             color: black;
+            padding-left: 30px;
         }
         a:link, a:visited {
             text-decoration: none;
@@ -76,7 +77,7 @@
         input[type=password],
         input[type=submit],
         input[type=email] {
-            display: block;
+            
             margin-bottom: 15px;
         }
         input[type=checkbox] {

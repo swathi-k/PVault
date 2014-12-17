@@ -27,7 +27,7 @@
 		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date, file_type FROM file_records WHERE userid =" . $uid . " ORDER BY " . $order . " " . $direction );
 	}
 	
-	print ('<table style="width:100%">');
+	print ('<table style="width:80%">');
 		
 		print ('<tr>
 					<th>
@@ -55,7 +55,7 @@
 // 				print('<a href="' . UPLOAD_DIR . $uid . '\\' . $fname . ' "onclick="myFunction()">');
 // 					print ($fname);
 // 				print("</a>");
-				
+							
 				print('<a href="index.php?logout&file_id=' . $fid . '">');
 					print ($fname);
 				print("</a>");
