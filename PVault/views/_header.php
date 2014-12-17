@@ -5,7 +5,7 @@
     <meta http-equiv="refresh" content="300;url=index.php?logout">
     <title>PVault</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="scripts/navbar.css">
     <script src="scripts/popup.js"></script>
     <script src="scripts/confirmationpopup.js"></script>
