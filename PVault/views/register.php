@@ -14,10 +14,10 @@
     <input id="user_email" type="email" name="user_email" required /></BR>
 
     <label for="user_password_new"><?php echo WORDING_REGISTRATION_PASSWORD; ?></label>
-    <input id="user_password_new" type="password" name="user_password_new" pattern=" ^.*(?=.{8,20})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$ " required autocomplete="off" /></BR>
+    <input id="user_password_new" type="password" name="user_password_new" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%]).{8,20})" required autocomplete="off" /></BR>
 
     <label for="user_password_repeat"><?php echo WORDING_REGISTRATION_PASSWORD_REPEAT; ?></label>
-    <input id="user_password_repeat" type="password" name="user_password_repeat" pattern=" ^.*(?=.{8,20})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$ " required autocomplete="off" /></BR>
+    <input id="user_password_repeat" type="password" name="user_password_repeat" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%]).{8,20})" required autocomplete="off" /></BR>
 
     <img src="tools/showCaptcha.php" alt="captcha" /></BR>
 
