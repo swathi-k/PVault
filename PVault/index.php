@@ -37,19 +37,36 @@ $login = new Login();
 if ($login->isUserLoggedIn() == true) {
     // the user is logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are logged in" view.
-    include("views/navbar.php");
-    include("views/logged_in.php");
-    if(isset($_FILES ["file"] ["name"])) {
-    	include("views/uploadasfile.php");
-    }
-    if(isset($_POST['deletefile'])) {
-    	include("views/deletefile.php");
-    }
-    include("views/listoffiles.php");
-
+ 	if(isset($_GET['file_id']))
+ 	{
+ 		$_SESSION['file_id'] = $_GET['file_id'];
+ 		include("views/vfile.php");
+ 	}
+ 	else
+ 	{
+		include("views/navbar.php");
+    	include("views/logged_in.php");
+    	if(isset($_FILES ["file"] ["name"])) {
+    		include("views/uploadasfile.php");
+    	}
+    	if(isset($_POST['deletefile'])) {
+    		include("views/deletefile.php");
+    	}
+    	include("views/listoffiles.php");
+ 	}
+	
+	
 } else {
+	if(isset($_GET['file_id']))
+	{
+		$_SESSION['file_id'] = $_GET['file_id'];
+		include("views/viewfile.php");
+	}
+	else
+	{
     // the user is not logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are not logged in" view.
 	include("views/navbar_not_logged_in.php");
     include("views/not_logged_in.php");
+	}
 }

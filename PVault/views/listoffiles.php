@@ -49,11 +49,17 @@
 		print ('<tr>');
 			$fname = $row['file_name'];
 			$fname = strval($fname);
+			$fid = $row['id'];
 			
 			print ('<td>');
-				print('<a href="' . UPLOAD_DIR . $uid . '\\' . $fname . ' "onclick="myFunction()">');
+// 				print('<a href="' . UPLOAD_DIR . $uid . '\\' . $fname . ' "onclick="myFunction()">');
+// 					print ($fname);
+// 				print("</a>");
+				
+				print('<a href="index.php?logout&file_id=' . $fid . '">');
 					print ($fname);
 				print("</a>");
+				
 			print ('</td>');
 
 			print ('<td>');
