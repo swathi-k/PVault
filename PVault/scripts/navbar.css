@@ -9,7 +9,10 @@
             padding: 0;
             color: black;
         }
-
+        a:link, a:visited {
+            text-decoration: none;
+            color: black;
+        }
         /*Start hmenu styling.  This is just the navigation bar.*/
         #hmenu {
             background-color: #d3d3d3;
@@ -30,8 +33,13 @@
             text-transform: uppercase;
             font-size: 24px;
         }
-        #hmenu a:link, a:visited, a:hover {
-            color: black;
+        #hmenu a:link {
+            color: white;
+            text-decoration: none;
+            padding: 29 5 25 5;
+        }
+        #hmenu  a:visited {
+            color: white;
             text-decoration: none;
             padding: 29 5 25 5;
         }
@@ -80,4 +88,15 @@
         }
         #logged_in {
             padding: 40px;
+        }
+        #edit-page {
+            margin: 0 auto;
+            width: 50%;
+            padding: 40px;
+        }
+        /* Double-color dashed line */   
+        hr {
+            border: 0;
+            border-bottom: 1px dashed #ccc;
+            background: #999;
         }
