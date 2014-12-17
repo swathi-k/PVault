@@ -30,18 +30,18 @@
 	print ('<table style="width:80%">');
 		
 		print ('<tr>
-					<th>
+					<td><b>
 						<a href="index.php?orderBy=file_name">' . TABLE_HEADER_FILE_NAME . '</a>
-					</th>
-					<th>
+					</b></td>
+					<td><b>
 						<a href="index.php?orderBy=file_size">' . TABLE_HEADER_FILE_SIZE . '</a>
-					</th>
-					<th>
+					</b></td>
+					<td><b>
 						<a href="index.php?orderBy=uploaded_date">' . TABLE_HEADER_FILE_UPLOAD_DATE . '</a>
-					</th>
-					<th>
+					</b></td>
+					<td><b>
 						<a href="index.php?orderBy=file_type">' . TABLE_HEADER_FILE_TYPE . '</a>
-					</th>
+					</b></td>
 				</tr>');
 	
 	while($row = mysqli_fetch_array($result))
