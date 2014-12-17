@@ -29,7 +29,7 @@
 			
 			// Enter your path to upload file here
 			if (file_exists ( $up_path . $_FILES ["file"] ["name"] )) {
-				echo "<div class='error'>" . $_FILES ["file"] ["name"] . WORDING_FILE_UPLOAD_ERROR_EXISTS . "</div>";
+// 				echo "<div class='error'>" . $_FILES ["file"] ["name"] . WORDING_FILE_UPLOAD_ERROR_EXISTS . "</div>";
 				print '<script>alert("'. $_FILES ["file"] ["name"] . WORDING_FILE_UPLOAD_ERROR_EXISTS .'");</script>';
 			} else {
 				$alertstring =  WORDING_UPLOAD_SUCCESS . $_FILES ["file"] ["name"];
@@ -45,7 +45,7 @@
 			}
 		}
 	} else {
-		echo "<div class='error'>" . WORDING_FILE_UPLOAD_ERROR . "</div>";
+// 		echo "<div class='error'>" . WORDING_FILE_UPLOAD_ERROR . "</div>";
 		print '<script>alert("'. WORDING_FILE_UPLOAD_ERROR .'");</script>';
 	}
 	
