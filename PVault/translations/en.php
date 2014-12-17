@@ -58,7 +58,7 @@ define("WORDING_CHANGE_PASSWORD", "Change password");
 define("WORDING_CHANGE_USERNAME", "Change username");
 define("WORDING_CURRENTLY", "currently");
 define("WORDING_EDIT_USER_DATA", "Edit user data");
-define("WORDING_EDIT_YOUR_CREDENTIALS", "You are logged in and can edit your credentials here");
+define("WORDING_EDIT_YOUR_CREDENTIALS", "you are logged in.  You can edit your credentials here.");
 define("WORDING_FORGOT_MY_PASSWORD", "I forgot my password");
 define("WORDING_LOGIN", "Login");
 define("WORDING_LOGOUT", "Logout");
@@ -81,7 +81,7 @@ define("WORDING_REQUEST_PASSWORD_RESET", "Request a password reset. Enter your u
 define("WORDING_RESET_PASSWORD", "Reset my password");
 define("WORDING_SUBMIT_NEW_PASSWORD", "Submit new password");
 define("WORDING_USERNAME", "Username");
-define("WORDING_YOU_ARE_LOGGED_IN_AS", "Hello! You are logged in as ");
+define("WORDING_YOU_ARE_LOGGED_IN_AS", "Welcome ");
 define("WORDING_FILE_UPLOAD_ERROR", "Invalid file type or size (less than 200kb): Please try again!");
 define("WORDING_FILE_UPLOAD_ERROR_EXISTS", " already exists! Please try again!");
 define("TABLE_HEADER_FILE_NAME", "File Name");
