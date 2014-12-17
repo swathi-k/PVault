@@ -27,7 +27,7 @@
 		$result = $db->query ( "SELECT id, file_name, file_size, uploaded_date, file_type FROM file_records WHERE userid =" . $uid . " ORDER BY " . $order . " " . $direction );
 	}
 	
-	print ('<table style="width:80%">');
+	print ('<center><table style="width:90%">');
 		
 		print ('<tr>
 					<td><b>
@@ -83,5 +83,5 @@
 		print ('</tr>');
 	}				
 	
-	print ('</table>') ;
+	print ('</table></center>') ;
 	?>

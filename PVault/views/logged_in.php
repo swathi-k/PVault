@@ -8,7 +8,7 @@ print '<div id="logged_in">
 	' .
 		WORDING_READY_UPLOAD . '</br>
 	
-	<table>		
+	<center><table style="width:90%">		
 	<td>
 					
 	<form action="index.php" method="post" enctype="multipart/form-data">
@@ -25,7 +25,7 @@ print '<div id="logged_in">
 		<input type="submit" name="submit" value="Enter">
 	</form>
 	</td>
-	</table>
+	</table></center>
 	
 </div>';
 ?>
