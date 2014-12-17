@@ -17,9 +17,10 @@
 	}
 				
 	$newurl = UPLOAD_DIR . $uid . '\\' . $fname;
+	$newurl = "http://localhost/uploads/" . $uid . "/" . $fname;
 	/* Redirect browser */
  	header("Location:" . $newurl);
-	
+ 	
  	/* Make sure that code below does not get executed when we redirect. */
- 	exit;
+ 	//exit;
 ?>

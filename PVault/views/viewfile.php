@@ -3,13 +3,13 @@
 
 	$file_id = $_GET['file_id'];
 
-	print $file_id;
+	//print $file_id;
 	
 	$_SESSION['file_id'] = $file_id;
 	$_SESSION['file_view'] = true;
 	print '
 	<center>	
-		<div>Confirm Login</br>
+		<div>Please Confirm Login</br>
 		<form method="post" action="index.php?file_id=' . $file_id . '" >
 			<fieldset>
 				<label for="user_name">' . WORDING_USERNAME . '</label>
